@@ -186,10 +186,58 @@ const Dashboard: React.FC = () => {
         )}
 
         {activeTab === 'analytics' && (
-          <div className="h-[60vh] flex flex-col items-center justify-center text-center p-12 bg-white/5 border border-dashed border-white/20 rounded-3xl">
-             <div className="w-16 h-16 border-t-2 border-[#F5F2EB] rounded-full animate-spin mb-8"></div>
-             <h2 className="text-2xl font-serif">Simulating 2026 Market Flow</h2>
-             <p className="text-[#A8A29E] text-sm font-light mt-4 max-w-xs">Connecting to Neural Network analytics for real-time biometric conversion data...</p>
+          <div className="bg-[#2C2A26] p-8 md:p-16 border border-white/5 rounded-3xl animate-fade-in-up">
+             <div className="max-w-4xl mx-auto">
+                <span className="text-xs font-bold uppercase tracking-[0.4em] text-[#A8A29E] block mb-8">Project Manifesto</span>
+                <h2 className="text-4xl md:text-5xl font-serif mb-12 border-b border-white/10 pb-12">The Aura 2026 Vision</h2>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+                  <div className="space-y-8">
+                    <div>
+                      <h3 className="text-xs uppercase tracking-widest text-[#F5F2EB] font-bold mb-4">Core Objective</h3>
+                      <p className="text-sm font-light leading-relaxed text-[#A8A29E]">
+                        Aura is a conceptual ecosystem where technology moves from silicon to biology. We represent a paradigm shift: "Invisible Tech" that interacts with human rhythms instead of demanding attention.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-xs uppercase tracking-widest text-[#F5F2EB] font-bold mb-4">The Collection</h3>
+                      <p className="text-sm font-light leading-relaxed text-[#A8A29E]">
+                        Our product line utilizes regenerative materials—carbon-sequestering silk, lab-grown mycelium, and bone-conduction interfaces. Every object is designed to age into a unique patina.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-8">
+                    <div>
+                      <h3 className="text-xs uppercase tracking-widest text-[#F5F2EB] font-bold mb-4">AI Intelligence</h3>
+                      <p className="text-sm font-light leading-relaxed text-[#A8A29E]">
+                        Driven by Google Gemini 3 Flash, our Brand Concierge acts as a curator of "Slow Tech," providing consultations on mental load reduction and biometric harmony.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-xs uppercase tracking-widest text-[#F5F2EB] font-bold mb-4">Strategic Logic</h3>
+                      <p className="text-sm font-light leading-relaxed text-[#A8A29E]">
+                        The Growth Portal utilizes Neural-Sync matching and Circadian targeting to reach global hubs without disrupting the user's digital sanctuary.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-20 p-8 bg-white/5 border border-white/10 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-8">
+                   <div className="text-center md:text-left">
+                     <p className="text-[10px] uppercase tracking-widest text-[#A8A29E] mb-1">Architecture Status</p>
+                     <p className="text-sm font-mono text-green-400">System Fully Regenerative</p>
+                   </div>
+                   <div className="text-center md:text-left">
+                     <p className="text-[10px] uppercase tracking-widest text-[#A8A29E] mb-1">Stack Integrity</p>
+                     <p className="text-sm font-mono">React 19 / Gemini 3 / TW 4</p>
+                   </div>
+                   <div className="text-center md:text-left">
+                     <p className="text-[10px] uppercase tracking-widest text-[#A8A29E] mb-1">2026 Readiness</p>
+                     <p className="text-sm font-mono">100% Intent-Synced</p>
+                   </div>
+                </div>
+             </div>
           </div>
         )}
       </div>
